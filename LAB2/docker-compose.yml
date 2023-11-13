@@ -1,0 +1,9 @@
+version: "2"
+services:
+    wed :
+      image: nginx
+      container_name: web_service
+      ports:
+        - 8000:80
+      volumes:
+        - ./html:/usr/share/nginx/html
